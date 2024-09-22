@@ -1,0 +1,35 @@
+@import "../../resources/variables.scss";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  background-color: $NAVBAR_BG_COLOR;
+  height: 64px;
+  gap: 20px;
+  background-color: lightgrey;
+  box-sizing: border-box;
+  padding: 0 100px;
+}
+
+.navbar .symbol {
+  gap: 10px;
+}
+
+.navbar .title {
+  font-size: $NAVBAR_TEXT_SIZE;
+  color: $BLACK;
+  letter-spacing: $TITLE_LETTER_SPACE;
+  font-weight: 200;
+}
+
+.navbar .symbol_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button_container {
+    display: flex;
+    gap: 10px;
+}

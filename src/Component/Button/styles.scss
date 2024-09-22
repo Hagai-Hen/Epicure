@@ -1,0 +1,11 @@
+@import '../../resources/variables.scss';
+
+.navbar_button {
+    cursor: pointer;
+    font-size: $NAVBAR_BTN_SIZE;
+    font-weight: 200;
+    line-height: 21.76px;
+    letter-spacing: 1.92px;
+    border: none;
+    background-color: transparent;
+}

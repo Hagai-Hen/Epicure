@@ -4,4 +4,5 @@ export interface CardInterface {
     desc?: string;
     rate?: number;
     price?: string;
+    type?: string;
   }

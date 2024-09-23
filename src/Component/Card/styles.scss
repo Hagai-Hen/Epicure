@@ -2,6 +2,7 @@
 
 .card_container {
   background-color: $CARD_BG_COLOR;
+  // height: 100%;
 }
 
 .pic {
@@ -11,13 +12,17 @@
 .text_container {
   margin: 15px;
   padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Center children horizontally
+
   h1 {
     font-family: Helvetica Neue;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.47px;
     letter-spacing: 2.67px;
-    text-align: left;
+    text-align: center; // Center text
   }
 
   h3 {
@@ -26,8 +31,47 @@
     font-weight: 200;
     line-height: 20px;
     letter-spacing: 1.97px;
-    text-align: left;
+    text-align: center; // Center text
   }
+
+  .type_icon {
+    display: flex;
+    justify-content: center; // Center icon horizontally
+    align-items: center; // Center icon vertically
+    margin-top: 20px;
+    height: 31px;
+    width: 40px;
+  }
+}
+
+
+
+.price_container {
+  display: flex;
+  align-items: center; // Keep this for vertical alignment
+  justify-content: center; // Center horizontally
+  width: 100%; // Ensure full width
+}
+.line {
+  flex: 1;
+  height: 1px; // Adjust height
+  background-color: #979797; // Use background color for visibility
+  margin: 0 10px; // Space between line and price
+}
+.price {
+  display: flex;
+  margin: 0;
+  font-family: Helvetica Neue;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 1.97px;
+  align-items: center;
+}
+.nis-icon {
+  margin-right: 2px;
+  height: 20px;
+  margin-top: 10px;
 }
 
 .rating {
@@ -43,12 +87,21 @@
 
   .text_container {
     h1 {
-        text-align: center;
-        font-size: 40px;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 47px;
+      letter-spacing: 2.6700000762939453px;
+      text-align: center;
+
+      margin: 0;
     }
     h3 {
-        text-align: center;
-        font-size: 24px;
+      font-size: 24px;
+      font-weight: 200;
+      line-height: 30px;
+      letter-spacing: 1.9700000286102295px;
+      text-align: center;
+
     }
   }
 }

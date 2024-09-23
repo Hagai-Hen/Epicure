@@ -1,0 +1,55 @@
+.container {
+  margin: 30px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  h1 {
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 24px;
+    letter-spacing: 1.25px;
+    text-align: left;
+  }
+}
+
+.cards_container {
+  display: none;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+  width: 379px;
+}
+
+@media (min-width: 786px) {
+  .container {
+    margin: 100px 30px;
+  }
+  .title {
+    h1 {
+      text-align: center;
+    }
+  }
+  .swiper_container {
+    display: none;
+  }
+
+  .cards_container {
+    display: flex;
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .title {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}

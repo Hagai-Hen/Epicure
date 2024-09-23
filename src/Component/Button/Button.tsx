@@ -1,5 +1,6 @@
 import "./styles.scss";
 import { ReactNode } from "react";
+import arrowSymbol from '../../assets/icons/arrow.svg';
 
 interface ButtonProps {
   children: ReactNode;
@@ -12,8 +13,8 @@ export const Button = ({ children, style, arrow = false }: ButtonProps) => {
 
   return (
     <>
-      <button className={className}>{children}</button>
-      {arrow && <img src="" />}
+      <button className={className}>{children} {arrow && <img src={arrowSymbol} className="symbol"/>} </button>
+      
     </>
   );
 };

@@ -12,6 +12,8 @@
 }
 
 .side_menu_button {
+  display: flex;
+  align-items: center;
   font-family: $MAIN_FONT_FAMILY;
   font-size: $SIDE_BTN_SIZE;
   font-weight: 200;
@@ -20,4 +22,8 @@
   text-align: left;
   background-color: transparent;
   border: none;
+}
+
+.symbol {
+  margin-left: 10px;
 }

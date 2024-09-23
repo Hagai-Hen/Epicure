@@ -1,16 +1,9 @@
 import "./styles.scss";
 import filledStar from "../../assets/icons/filled_star.svg";
 import emptyStar from "../../assets/icons/empty_star.svg";
+import { CardInterface } from "../../resources/interfaces";
 
-interface CardProps {
-  pic: string;
-  title: string;
-  desc?: string;
-  rate?: number;
-  price?: string;
-}
-
-export const Card = ({ pic, title, desc, rate = 0, price }: CardProps) => {
+export const Card = ({ pic, title, desc, rate = 0, price }: CardInterface) => {
   const stars = [];
 
   for (let i = 0; i < 5; i++) {

@@ -3,6 +3,7 @@ import TypeIcon from '../assets/icons/type.svg';
 import SpicyIcon from "../assets/icons/spicy.svg";
 import VeganIcon from "../assets/icons/vegan.svg";
 import VegitarianIcon from "../assets/icons/vegitarian.svg";
+import ChefPic from '../assets/pictures/chef.svg';
 
 export const NAVBAR = {
   TITLE: "EPICURE",
@@ -83,4 +84,11 @@ export const KEY_BANNER = {
   VEGITARIAN: 'Vegitarian',
   VEGAN: 'Vegan',
   DATA: [{title: 'Spicy', icon: SpicyIcon}, {title: 'Vegitarian', icon: VegitarianIcon}, {title: 'Vegan', icon: VeganIcon}],
+}
+
+export const CHEF_OF_THE_WEEK = {
+  TITLE: 'CHEF OF THE WEEK:',
+  CHEF_TITLE: 'Yossi Shitrit',
+  DESC: `Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.`,
+  IMG: ChefPic,
 }

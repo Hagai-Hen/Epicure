@@ -1,0 +1,70 @@
+@import "../../resources/variables.scss";
+
+.chef_banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: $MAIN_FONT_FAMILY;
+  font-size: $SMALL_FONT_SIZE;
+  font-weight: 200;
+  line-height: 35px;
+  letter-spacing: 1.25px;
+  text-align: left;
+}
+
+.chef_img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+}
+
+.chef_title {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 100;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $MAIN_FONT_FAMILY;
+  font-size: $SMALL_FONT_SIZE;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 2.67px;
+  text-align: center;
+}
+
+.desc {
+  font-family: $MAIN_FONT_FAMILY;
+  font-size: $SMALL_FONT_SIZE;
+  font-weight: 200;
+  line-height: 28px;
+  letter-spacing: 1.25px;
+  text-align: justified;
+}
+
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
+  .title {
+    font-size: $GIANT_FONT_SIZE;
+    text-align: center;
+  }
+
+  .main_container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .desc {
+    font-size: $MEDIUM_FONT_SIZE;
+    line-height: 35px;
+  }
+}

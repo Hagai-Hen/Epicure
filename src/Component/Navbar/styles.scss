@@ -48,7 +48,7 @@
   gap: 10px;
 }
 
-@media (min-width: 564px) {
+@media (min-width: map-get($BREAK_POINTS, SMALL)) {
   .navbar {
     height: 64px;
     padding: 0 100px;
@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 786px) {
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
   .button_container {
     display: flex;
   }

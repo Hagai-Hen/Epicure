@@ -82,7 +82,7 @@
   padding: 10px 0;
 }
 
-@media (min-width: 786px) {
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
   .rating {
     display: flex;
   }

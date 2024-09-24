@@ -36,7 +36,7 @@
   margin-top: 30px;
 }
 
-@media (min-width: 786px) {
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
   .container {
     margin: 100px 30px;
   }

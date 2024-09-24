@@ -52,7 +52,7 @@
   pointer-events: none;
 }
 
-@media (min-width: 786px) {
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
   .search_input {
     margin: 6px 12px 6px 28px;
   }

@@ -26,7 +26,7 @@
   margin: 20px 0;
 }
 
-@media (min-width: 786px) {
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
   .side_menu {
     display: none;
   }

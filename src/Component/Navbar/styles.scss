@@ -1,5 +1,23 @@
 @import "../../resources/variables.scss";
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -18,6 +36,12 @@
   .symbol {
     margin: auto;
     cursor: pointer;
+
+    transition: transform 0.5s;
+
+    &:hover {
+      animation: rotate 1s linear;
+    }
   }
   .hambur_symbol {
     display: flex;
@@ -38,8 +62,13 @@
   justify-content: flex-end;
   gap: 20px;
 
+  transition: transform 0.5s;
+
   .symbol {
     cursor: pointer;
+    &:hover {
+      animation: rotateY 1.5s ease-in-out;
+    }
   }
 }
 

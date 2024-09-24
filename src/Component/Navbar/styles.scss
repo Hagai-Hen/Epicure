@@ -1,0 +1,73 @@
+@import "../../resources/variables.scss";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  background-color: $NAVBAR_BG_COLOR;
+  gap: 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.left_container {
+  display: flex;
+
+  .symbol {
+    margin: auto;
+    cursor: pointer;
+  }
+  .hambur_symbol {
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+.navbar .title {
+  font-size: $NAVBAR_TEXT_SIZE;
+  color: $BLACK;
+  letter-spacing: $TITLE_LETTER_SPACE;
+  font-weight: 200;
+  display: none;
+}
+
+.navbar .symbol_container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+
+  .symbol {
+    cursor: pointer;
+  }
+}
+
+.button_container {
+  display: none;
+  gap: 10px;
+}
+
+@media (min-width: map-get($BREAK_POINTS, SMALL)) {
+  .navbar {
+    height: 64px;
+    padding: 0 100px;
+    .title {
+      display: block;
+    }
+  }
+  .left_container {
+    gap: 20px;
+  }
+}
+
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
+  .button_container {
+    display: flex;
+  }
+  .left_container {
+    .hambur_symbol {
+      display: none;
+    }
+  }
+}

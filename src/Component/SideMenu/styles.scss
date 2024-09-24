@@ -1,0 +1,32 @@
+@import "../../resources/variables.scss";
+
+.side_menu {
+  width: 375px;
+  border: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $WHITE;
+  padding: 15px;
+  border: 1px solid $DIVIDER_COLOR;
+}
+
+.buttons_container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 20px 0;
+}
+
+.divider {
+  display: flex;
+  height: 1px;
+  background-color: $DIVIDER_COLOR;
+  margin: 20px 0;
+}
+
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
+  .side_menu {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../resources/variables.scss";
+
+.navbar_button {
+  font-family: $MAIN_FONT_FAMILY;
+  cursor: pointer;
+  font-size: $NAVBAR_BTN_SIZE;
+  font-weight: 200;
+  line-height: 21.76px;
+  letter-spacing: 1.92px;
+  border: none;
+  background-color: transparent;
+}
+
+.side_menu_button {
+  display: flex;
+  align-items: center;
+  font-family: $MAIN_FONT_FAMILY;
+  font-size: $SIDE_BTN_SIZE;
+  font-weight: 200;
+  line-height: 21.76px;
+  letter-spacing: 1.92px;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+}
+
+.symbol {
+  margin-left: 10px;
+}

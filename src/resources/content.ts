@@ -73,3 +73,10 @@ export const DISHES = {
     },
   ]
 }
+
+export const KEY_BANNER = {
+  TITLE: 'THE MEANING OF OUR ICONS:',
+  SPICY: 'Spicy',
+  VEGITARIAN: 'Vegitarian',
+  VEGAN: 'Vegan',
+}

@@ -7,8 +7,8 @@ export const ChefBanner = () => {
       <h1 className="title">{CHEF_OF_THE_WEEK.TITLE}</h1>
       <main className="main_container">
         <section className="chef_img">
-        <img src={CHEF_OF_THE_WEEK.IMG} />
-        <h3 className="chef_title">{CHEF_OF_THE_WEEK.CHEF_TITLE}</h3>
+          <img src={CHEF_OF_THE_WEEK.IMG} />
+          <h3 className="chef_title">{CHEF_OF_THE_WEEK.CHEF_TITLE}</h3>
         </section>
         <h5 className="desc">{CHEF_OF_THE_WEEK.DESC}</h5>
       </main>

@@ -1,0 +1,20 @@
+@import "../../resources/variables.scss";
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons_container {
+  gap: 25px;
+  padding: 30px 20px;
+}
+
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
+  .buttons_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

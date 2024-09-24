@@ -5,6 +5,7 @@ import { POPULAR_REST, DISHES } from "./resources/content";
 import { KeyBanner } from "./Component/KeyBanner/KeyBanner";
 import { ChefBanner } from "./Component/ChefBanner/ChefBanner";
 import { About } from "./Component/About/About";
+import { Footer } from "./Component/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <KeyBanner />
       <ChefBanner />
       <About />
+      <Footer />
     </>
   );
 }

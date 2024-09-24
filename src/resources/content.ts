@@ -42,13 +42,13 @@ export const POPULAR_REST = {
       pic: CardPic,
       title: "Claro",
       desc: "descriprion",
-      rate: 3,
+      rate: 4,
     },
     {
       pic: CardPic,
       title: "Claro",
       desc: "descriprion",
-      rate: 3,
+      rate: 2,
     },
   ]
 }

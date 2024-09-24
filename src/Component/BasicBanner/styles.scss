@@ -1,0 +1,7 @@
+@import "../../resources/variables.scss";
+
+.basic_banner {
+  background-color: $BANNER_BG_COLOR;
+  display: flex;
+  flex-direction: column;
+}

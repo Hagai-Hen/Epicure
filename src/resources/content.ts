@@ -1,5 +1,8 @@
 import CardPic from "../assets/pictures/card_pic.svg";
 import TypeIcon from '../assets/icons/type.svg';
+import SpicyIcon from "../assets/icons/spicy.svg";
+import VeganIcon from "../assets/icons/vegan.svg";
+import VegitarianIcon from "../assets/icons/vegitarian.svg";
 
 export const NAVBAR = {
   TITLE: "EPICURE",
@@ -79,4 +82,5 @@ export const KEY_BANNER = {
   SPICY: 'Spicy',
   VEGITARIAN: 'Vegitarian',
   VEGAN: 'Vegan',
+  DATA: [{title: 'Spicy', icon: SpicyIcon}, {title: 'Vegitarian', icon: VegitarianIcon}, {title: 'Vegan', icon: VeganIcon}],
 }

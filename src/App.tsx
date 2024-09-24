@@ -4,6 +4,7 @@ import { Slider } from "./Component/Slider/Slider";
 import { POPULAR_REST, DISHES } from "./resources/content";
 import { KeyBanner } from "./Component/KeyBanner/KeyBanner";
 import { ChefBanner } from "./Component/ChefBanner/ChefBanner";
+import { About } from "./Component/About/About";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Slider title={DISHES.TITLE} cards={DISHES.DATA} />
       <KeyBanner />
       <ChefBanner />
+      <About />
     </>
   );
 }

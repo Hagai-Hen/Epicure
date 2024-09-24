@@ -1,0 +1,64 @@
+@import "../../resources/variables.scss";
+
+.about_container {
+  margin: 20px 15px;
+}
+
+.about_logo {
+  margin-bottom: 30px;
+  box-sizing: border-box; // Include padding and border in the element's total width and height
+}
+
+.mobile {
+  margin-bottom: 30px;
+  img {
+    margin-bottom: 15px;
+    margin-right: 30px;
+
+  }
+}
+
+.about_details {
+  h1 {
+    font-family: $MAIN_FONT_FAMILY;
+    font-size: $SMALL_FONT_SIZE;
+    font-weight: 200;
+    line-height: 35px;
+    letter-spacing: 1.25px;
+    text-align: left;
+  }
+
+  h3 {
+    font-family: $MAIN_FONT_FAMILY;
+    font-size: $MAIN_FONT_FAMILY;
+    font-weight: 200;
+    line-height: 28px;
+    letter-spacing: 2.14px;
+    text-align: left;
+  }
+}
+
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
+  .about_container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .about_logo {
+    display: flex;
+    img {
+      padding: 100px 100px;
+    }
+  }
+
+  .mobile {
+    margin-bottom: 0;
+    img {
+      margin-right: 30px;
+    }
+  }
+
+  .about_details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

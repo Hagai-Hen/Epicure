@@ -1,0 +1,107 @@
+@import "../../resources/variables.scss";
+
+.card_container {
+  background-color: $CARD_BG_COLOR;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pic {
+  width: 100%;
+}
+
+.text_container {
+  margin: 15px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+
+  h1 {
+    font-family: $MAIN_FONT_FAMILY;
+    font-size: $SMALL_FONT_SIZE;
+    font-weight: 400;
+    line-height: 21.47px;
+    letter-spacing: 2.67px;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: $MAIN_FONT_FAMILY;
+    font-size: $VERY_SMALL_FONT_SIZE;
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: 1.97px;
+    text-align: center;
+  }
+
+  .type_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 31px;
+    width: 40px;
+  }
+}
+
+.price_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: $CARD_LINE_COLOR;
+  margin: 0 10px;
+}
+.price {
+  display: flex;
+  margin: 0;
+  font-family: $MAIN_FONT_FAMILY;
+  font-size: $MEDIUM_FONT_SIZE;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 1.97px;
+  align-items: center;
+}
+.nis-icon {
+  margin-right: 2px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.rating {
+  display: none;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
+  .rating {
+    display: flex;
+  }
+
+  .text_container {
+    h1 {
+      font-size: $VERY_GIANT_FONT_SIZE;
+      font-weight: 400;
+      line-height: 47px;
+      letter-spacing: 2.67px;
+      text-align: center;
+      margin: 0;
+    }
+    h3 {
+      font-size: $MEDIUM_FONT_SIZE;
+      font-weight: 200;
+      line-height: 30px;
+      letter-spacing: 1.97px;
+      text-align: center;
+    }
+  }
+}

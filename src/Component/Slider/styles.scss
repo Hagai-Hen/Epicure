@@ -1,0 +1,65 @@
+@import '../../resources/variables.scss';
+
+.container {
+  margin: 30px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  h1 {
+    font-family: $MAIN_FONT_FAMILY;
+    font-size: $SMALL_FONT_SIZE;
+    font-weight: 200;
+    line-height: 24px;
+    letter-spacing: 1.25px;
+    text-align: left;
+  }
+}
+
+.cards_container {
+  display: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  max-height: 100vh;
+  width: 379px;
+}
+
+.swiper_container {
+  max-height: 100vh;
+  display: flex;
+}
+
+.button {
+  margin-top: 30px;
+}
+
+@media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
+  .container {
+    margin: 100px 30px;
+  }
+  .title {
+    h1 {
+      text-align: center;
+    }
+  }
+  .swiper_container {
+    display: none;
+  }
+
+  .cards_container {
+    display: flex;
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .title {
+    h1 {
+      font-size: $GIANT_FONT_SIZE;
+    }
+  }
+}

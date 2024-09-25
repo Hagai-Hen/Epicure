@@ -1,4 +1,4 @@
-@import '../../resources/variables.scss';
+@import "../../resources/variables.scss";
 
 .top_banner {
   position: relative;
@@ -15,12 +15,12 @@
   top: 50%;
   left: 15%;
   transform: translate(-10%, -50%);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.88);
 }
 
 .search_text {
   font-family: $MAIN_FONT_FAMILY;
-  font-size: $SEARCH_TEXT_SIZE;
+  font-size: $GIANT_FONT_SIZE;
   font-weight: 200;
   line-height: 32px;
   letter-spacing: 1.97px;
@@ -41,6 +41,18 @@
   font-weight: 200;
   line-height: 14.51px;
   letter-spacing: 1.29px;
+
+  &::placeholder {
+    color: $BLACK;
+    opacity: 1;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0.3;
+    }
+    outline: none;
+  }
 }
 
 .icon {
@@ -55,6 +67,8 @@
 @media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
   .search_input {
     margin: 6px 12px 6px 28px;
+    font-size: $MEDIUM_FONT_SIZE;
+    line-height: 29.02px;
   }
   .search_text {
     padding: 0 15%;
@@ -69,7 +83,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.7);
   }
 
   .icon {

@@ -7,6 +7,9 @@ import ChefPic from '../assets/pictures/chef.svg';
 import AboutLogo from '../assets/icons/about_logo.svg';
 import AppStoreIcon from '../assets/icons/app_store.svg';
 import GooglePlay from '../assets/icons/google_play.svg';
+import KitchenMarketPic from '../assets/pictures/kitchen_market.svg';
+import OnzaPic from '../assets/pictures/onza.svg';
+import MashyaPic from '../assets/pictures/mashya.svg';
 
 export const NAVBAR = {
   TITLE: "EPICURE",
@@ -94,6 +97,8 @@ export const CHEF_OF_THE_WEEK = {
   CHEF_TITLE: 'Yossi Shitrit',
   DESC: `Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.`,
   IMG: ChefPic,
+  CHEF_REST: `Yossi's Restaurants`,
+  REST: [{pic: OnzaPic, title: 'Onza'}, {pic: KitchenMarketPic, title: 'Kitchen Market'}, {pic: MashyaPic, title: 'Mashya'}]
 }
 
 export const ABOUT = {

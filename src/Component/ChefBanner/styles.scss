@@ -3,6 +3,16 @@
 .chef_banner {
   display: flex;
   flex-direction: column;
+  padding: 100px 0;
+
+  h4 {
+    font-family: $MAIN_FONT_FAMILY;
+    font-size: $VERY_SMALL_FONT_SIZE;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: 1.25px;
+    text-align: left;
+  }
 }
 
 .title {
@@ -19,6 +29,7 @@
   margin: 0;
   padding: 0;
   width: fit-content;
+  height: max-content;
 }
 
 .chef_title {
@@ -44,12 +55,19 @@
 }
 
 .desc {
+  margin: 0;
   font-family: $MAIN_FONT_FAMILY;
   font-size: $SMALL_FONT_SIZE;
   font-weight: 200;
   line-height: 28px;
   letter-spacing: 1.25px;
   text-align: justified;
+}
+
+.chef_rest {
+  margin: 0;
+  display: none;
+  gap: 20px;
 }
 
 @media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
@@ -67,4 +85,43 @@
     font-size: $MEDIUM_FONT_SIZE;
     line-height: 35px;
   }
+
+  .swiper_container {
+    display: none;
+  }
+
+  .chef_rest {
+    display: flex;
+  }
+
+  .rest_card {
+    display: flex;
+    max-width: 232px;
+
+    h3 {
+      font-family: $MAIN_FONT_FAMILY;
+      font-size: $GIANT_FONT_SIZE;
+      font-weight: 400;
+      line-height: 47px;
+      letter-spacing: 2.67px;
+      text-align: center;
+    }
+  }
+
+  .chef_banner {
+    margin: 0 100px;
+    h4 {
+      font-family: $MAIN_FONT_FAMILY;
+      font-size: 30px;
+      line-height: 35px;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: map-get($BREAK_POINTS, LARGE)) {
+  .chef_banner {
+    margin: 0 200px;
+  }
+
 }

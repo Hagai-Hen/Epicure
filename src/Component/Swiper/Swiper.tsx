@@ -19,18 +19,16 @@ export const SwiperComponent = ({ cards }: SwiperProps) => {
             <img src={card.pic} className="pic" />
             <section className="text_container">
               <h1>{card.title}</h1>
-              {card.type && <img src={card.type} className="type_icon" />}
               <section className="desc_container">
                 <h3>{card.desc}</h3>
                 <div className="rating">{card.rate && getStars(card.rate)}</div>
+              {card.type && <img src={card.type} className="type_icon" />}
                 {card.price && (
                   <div className="price_container">
-                    <span className="line"></span>
                     <span className="price">
-                      <img src={nisIcon} alt="NIS Icon" className="nis-icon" />{" "}
-                      {card.price}
+                      <img src={nisIcon} alt="NIS Icon" className="nis-icon" />
+                      <h3>{card.price}</h3>
                     </span>
-                    <span className="line"></span>
                   </div>
                 )}
               </section>

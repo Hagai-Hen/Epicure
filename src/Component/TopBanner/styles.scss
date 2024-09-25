@@ -16,15 +16,17 @@
   left: 15%;
   transform: translate(-10%, -50%);
   background-color: rgba(255, 255, 255, 0.88);
+  padding: 15px 15px;
 }
 
 .search_text {
   font-family: $MAIN_FONT_FAMILY;
-  font-size: $GIANT_FONT_SIZE;
+  font-size: $MEDIUM_FONT_SIZE;
   font-weight: 200;
   line-height: 32px;
-  letter-spacing: 1.97px;
+  letter-spacing: 1.97;
   text-align: center;
+  margin: 0;
 }
 
 .search_input {
@@ -59,19 +61,23 @@
   width: 20px;
   height: 20px;
   position: absolute;
-  left: -125px;
-  bottom: 12px;
+  left: -120px;
+  bottom: 27px;
   pointer-events: none;
 }
 
 @media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
   .search_input {
     margin: 6px 12px 6px 28px;
-    font-size: $MEDIUM_FONT_SIZE;
+    font-size: $SMALL_FONT_SIZE;
     line-height: 29.02px;
   }
   .search_text {
+    font-family: $MAIN_FONT_FAMILY;
+    font-size: 32px;
+    line-height: 40px;
     padding: 0 15%;
+    margin: 24px 0;
   }
   .top_banner img {
     height: 70vh;
@@ -86,8 +92,8 @@
   }
 
   .icon {
-    left: 45px;
-    bottom: 12px;
+    left: 55px;
+    bottom: 26px;
     max-width: 20px;
     max-height: 20px;
   }

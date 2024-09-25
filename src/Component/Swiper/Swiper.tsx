@@ -2,6 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { CardInterface } from "../../resources/interfaces";
 import "swiper/css";
 import { Card } from "../Card/Card";
+import nisIcon from "../../assets/icons/nis.svg";
+import { getStars } from "../../resources/utils";
+
 
 interface SwiperProps {
   cards: CardInterface[];
@@ -12,13 +15,27 @@ export const SwiperComponent = ({ cards }: SwiperProps) => {
     <Swiper spaceBetween={20} slidesPerView={1.5}>
       {cards.map((card, i) => (
         <SwiperSlide key={i}>
-          <Card
-            pic={card.pic}
-            title={card.title}
-            desc={card?.desc}
-            rate={card?.rate}
-            price={card?.price}
-          />
+          <Card>
+            <img src={card.pic} className="pic" />
+            <section className="text_container">
+              <h1>{card.title}</h1>
+              {card.type && <img src={card.type} className="type_icon" />}
+              <section className="desc_container">
+                <h3>{card.desc}</h3>
+                <div className="rating">{card.rate && getStars(card.rate)}</div>
+                {card.price && (
+                  <div className="price_container">
+                    <span className="line"></span>
+                    <span className="price">
+                      <img src={nisIcon} alt="NIS Icon" className="nis-icon" />{" "}
+                      {card.price}
+                    </span>
+                    <span className="line"></span>
+                  </div>
+                )}
+              </section>
+            </section>
+          </Card>
         </SwiperSlide>
       ))}
     </Swiper>

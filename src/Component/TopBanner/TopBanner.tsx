@@ -16,14 +16,10 @@ export const TopBanner = () => {
         setBannerImage(TopBannerPic);
       }
     };
-
-    // Set initial image based on current window size
     handleResize();
 
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };

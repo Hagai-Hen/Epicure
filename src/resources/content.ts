@@ -1,5 +1,4 @@
 import CardPic from "../assets/pictures/card_pic.svg";
-import TypeIcon from '../assets/icons/type.svg';
 import SpicyIcon from "../assets/icons/spicy.svg";
 import VeganIcon from "../assets/icons/vegan.svg";
 import VegitarianIcon from "../assets/icons/vegitarian.svg";
@@ -10,6 +9,12 @@ import GooglePlay from '../assets/icons/google_play.svg';
 import KitchenMarketPic from '../assets/pictures/kitchen_market.svg';
 import OnzaPic from '../assets/pictures/onza.svg';
 import MashyaPic from '../assets/pictures/mashya.svg';
+import LuminaPic from '../assets/pictures/lumina.svg';
+import TigerPic from '../assets/pictures/tiger-lily.svg';
+import PadKiPic from '../assets/pictures/pad_ki_mao.svg';
+import GarbanzoPic from '../assets/pictures/garbanzo_frito.svg';
+import SmokedPizzaPic from '../assets/pictures/smoked_pizza.svg';
+
 
 export const NAVBAR = {
   TITLE: "EPICURE",
@@ -38,20 +43,20 @@ export const POPULAR_REST = {
     {
       pic: CardPic,
       title: "Claro",
-      desc: "descriprion",
-      rate: 3,
-    },
-    {
-      pic: CardPic,
-      title: "Claro",
-      desc: "descriprion",
+      desc: "Ran Shmueli",
       rate: 4,
     },
     {
-      pic: CardPic,
-      title: "Claro",
-      desc: "descriprion",
-      rate: 2,
+      pic: LuminaPic,
+      title: "Lumina",
+      desc: "Meir Adoni",
+      rate: 3,
+    },
+    {
+      pic: TigerPic,
+      title: "Tiger Lilly",
+      desc: "Yanir Green",
+      rate: 4,
     },
   ]
 }
@@ -61,25 +66,25 @@ export const DISHES = {
   ALL: 'All Restaurants',
   DATA: [
     {
-      pic: CardPic,
+      pic: PadKiPic,
       title: "Pad Ki Mao",
       desc: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
       price: '88',
-      type: TypeIcon
+      type: SpicyIcon
     },
     {
-      pic: CardPic,
+      pic: GarbanzoPic,
       title: "Garbanzo Frito",
       desc: "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
       price: '98',
-      type: TypeIcon
+      type: SpicyIcon
     },
     {
-      pic: CardPic,
+      pic: SmokedPizzaPic,
       title: "Smoked Pizza",
       desc: "Basil dough, cashew 'butter', demi-glace, bison & radish",
       price: '65',
-      type: TypeIcon
+      type: VeganIcon
     },
   ]
 }
@@ -109,7 +114,7 @@ export const ABOUT = {
   DESC: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum non 
 eu ipsum. Cras porta malesuada eros, eget blandit
 turpis suscipit at.  Vestibulum sed massa in magna sodales porta.  Vivamus elit urna, 
-dignissim a vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no
+dignissim a vestibulum.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no
 eu ipsum. Cras porta malesuada eros.`
 
 

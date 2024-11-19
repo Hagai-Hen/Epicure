@@ -6,9 +6,9 @@
   flex-direction: column;
 }
 
-.title {
-  padding: 20px;
-
+.key_title {
+  padding: 20px 0;
+  text-align: center;
   h1 {
     font-family: $MAIN_FONT_FAMILY;
     font-size: $SMALL_FONT_SIZE;
@@ -65,5 +65,9 @@
 
   .icons {
     flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    padding-left: 20px;
   }
 }

@@ -1,25 +1,19 @@
 import { Navbar } from "./Component/Navbar/Navbar";
-import { TopBanner } from "./Component/TopBanner/TopBanner";
-import { Slider } from "./Component/Slider/Slider";
-import { POPULAR_REST, DISHES } from "./resources/content";
-import { KeyBanner } from "./Component/KeyBanner/KeyBanner";
-import { ChefBanner } from "./Component/ChefBanner/ChefBanner";
-import { About } from "./Component/About/About";
-import { Footer } from "./Component/Footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home/HomePage";
 
 function App() {
+
   return (
     <>
-      <Navbar />
-      <TopBanner />
-      <Slider title={POPULAR_REST.TITLE} cards={POPULAR_REST.DATA} />
-      <Slider title={DISHES.TITLE} cards={DISHES.DATA} />
-      <KeyBanner />
-      <ChefBanner />
-      <About />
-      <Footer />
+    <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/rest" element={<h1>Restaurant Page</h1>} />
+        <Route path="/desc/:name" element={<h1>Restaurant Page</h1>} />
+      </Routes>
     </>
-  );
+  )
 }
 
 export default App;

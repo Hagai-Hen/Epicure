@@ -18,13 +18,18 @@
   background-color: rgba(255, 255, 255, 0.88);
 }
 
+.large_pic {
+  display: none;
+}
+
 .search_text {
   font-family: $MAIN_FONT_FAMILY;
-  font-size: $GIANT_FONT_SIZE;
+  font-size: $MEDIUM_FONT_SIZE;
   font-weight: 200;
   line-height: 32px;
-  letter-spacing: 1.97px;
+  letter-spacing: 1.97;
   text-align: center;
+  margin: 0;
 }
 
 .search_input {
@@ -59,22 +64,27 @@
   width: 20px;
   height: 20px;
   position: absolute;
-  left: -125px;
+  left: -41%;
   bottom: 12px;
   pointer-events: none;
+  box-sizing: border-box;
 }
 
 @media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
   .search_input {
     margin: 6px 12px 6px 28px;
-    font-size: $MEDIUM_FONT_SIZE;
+    font-size: $SMALL_FONT_SIZE;
     line-height: 29.02px;
   }
   .search_text {
-    padding: 0 15%;
+    font-family: $MAIN_FONT_FAMILY;
+    font-size: 32px;
+    line-height: 40px;
+    padding: 0 20%;
+    margin: 24px 0;
   }
   .top_banner img {
-    height: 70vh;
+    height: 82vh;
     object-fit: cover;
   }
 
@@ -83,12 +93,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 15px 15px;
   }
 
   .icon {
-    left: 45px;
-    bottom: 12px;
+    left: 50px;
+    bottom: 26px;
     max-width: 20px;
     max-height: 20px;
+  }
+  .large_pic {
+    display: block;
+  }
+
+  .small_pic {
+    display: none;
   }
 }

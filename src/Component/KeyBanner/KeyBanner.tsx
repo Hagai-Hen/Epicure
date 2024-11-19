@@ -5,7 +5,7 @@ import { BasicBanner } from "../BasicBanner/BasicBanner";
 export const KeyBanner = () => {
   return (
     <BasicBanner>
-      <section className="title">
+      <section className="key_title">
         <h1>{KEY_BANNER.TITLE}</h1>
       </section>
       <section className="icons">

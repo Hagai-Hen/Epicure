@@ -8,6 +8,7 @@ import BagSymbol from "../../assets/icons/bag.svg";
 import HamburSymbol from "../../assets/icons/hambur.svg";
 import { useState } from "react";
 import { SideMenu } from "../SideMenu/SideMenu";
+import { Fade } from "react-awesome-reveal";
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -41,11 +42,15 @@ export const Navbar = () => {
       </section>
 
       {isMenuOpen && (
+        <div className="side_menu">
+        <Fade>
         <SideMenu
           setIsMenuOpen={setIsMenuOpen}
           MenuButtons={BUTTONS.MENU}
           FooterButtons={BUTTONS.FOOTER}
         />
+        </Fade>
+        </div>
       )}
     </header>
   );

@@ -2,14 +2,13 @@
 
 .side_menu {
   width: 375px;
-  border: 1px;
   position: absolute;
   top: 0;
   left: 0;
   background-color: $WHITE;
-  padding: 15px;
-  border: 1px solid $DIVIDER_COLOR;
+  padding: 10px;
   z-index: 10;
+  box-shadow: 2px 4px 10px 0px #AFAFAF40;
 }
 
 .buttons_container {

@@ -6,6 +6,7 @@
   flex-direction: column;
 }
 .title {
+  padding: 10px 0;
   h1 {
     font-family: $MAIN_FONT_FAMILY;
     font-size: $SMALL_FONT_SIZE;
@@ -13,6 +14,7 @@
     line-height: 24px;
     letter-spacing: 1.25px;
     text-align: left;
+    margin: 0;
   }
 }
 
@@ -35,6 +37,7 @@
 
 .button {
   margin-top: 30px;
+  margin-right: 9%;
 }
 
 @media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
@@ -58,9 +61,15 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .mobile-only {
+    display: none;
+  }
+  
   .title {
     h1 {
       font-size: $GIANT_FONT_SIZE;
+      margin-bottom: 15px;
     }
   }
 }

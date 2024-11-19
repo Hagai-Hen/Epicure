@@ -1,5 +1,23 @@
 @import "../../resources/variables.scss";
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -10,14 +28,23 @@
   box-sizing: border-box;
   justify-content: space-between;
   padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .left_container {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   .symbol {
-    margin: auto;
-    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+      animation: rotate 1s linear;
+    }
   }
   .hambur_symbol {
     display: flex;
@@ -31,6 +58,7 @@
   letter-spacing: $TITLE_LETTER_SPACE;
   font-weight: 200;
   display: none;
+  cursor: pointer;
 }
 
 .navbar .symbol_container {
@@ -38,8 +66,13 @@
   justify-content: flex-end;
   gap: 20px;
 
+  transition: transform 0.5s;
+
   .symbol {
     cursor: pointer;
+    &:hover {
+      animation: rotateY 1.5s ease-in-out;
+    }
   }
 }
 
@@ -69,5 +102,6 @@
     .hambur_symbol {
       display: none;
     }
+    justify-content: flex-start;
   }
 }

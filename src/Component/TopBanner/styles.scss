@@ -18,6 +18,10 @@
   background-color: rgba(255, 255, 255, 0.88);
 }
 
+.large_pic {
+  display: none;
+}
+
 .search_text {
   font-family: $MAIN_FONT_FAMILY;
   font-size: $MEDIUM_FONT_SIZE;
@@ -97,5 +101,12 @@
     bottom: 26px;
     max-width: 20px;
     max-height: 20px;
+  }
+  .large_pic {
+    display: block;
+  }
+
+  .small_pic {
+    display: none;
   }
 }

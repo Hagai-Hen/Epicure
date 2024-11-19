@@ -28,7 +28,7 @@ export const Navbar = () => {
         <h3 className="title">{NAVBAR.TITLE}</h3>
         <section className="button_container">
           {BUTTONS.MENU.map((btn, i) => (
-            <Button style="navbar_button" key={i}>
+            <Button style="side_menu_button" key={i}>
               {btn.title}
             </Button>
           ))}

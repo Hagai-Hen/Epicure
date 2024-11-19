@@ -1,4 +1,4 @@
-@import '../../resources/variables.scss';
+@import "../../resources/variables.scss";
 
 .container {
   margin: 30px 15px;
@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 .title {
-  padding: 10px 0;
+  padding: 10px 0 20px 0;
   h1 {
     font-family: $MAIN_FONT_FAMILY;
     font-size: $SMALL_FONT_SIZE;
@@ -37,7 +37,7 @@
 
 .button {
   margin-top: 30px;
-  margin-right: 9%;
+  margin-right: 8%;
 }
 
 @media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
@@ -47,6 +47,8 @@
   .title {
     h1 {
       text-align: center;
+      font-size: $GIANT_FONT_SIZE;
+      margin-bottom: 25px;
     }
   }
   .swiper_container {
@@ -65,11 +67,9 @@
   .mobile-only {
     display: none;
   }
-  
+
   .title {
-    h1 {
-      font-size: $GIANT_FONT_SIZE;
-      margin-bottom: 15px;
-    }
+    text-align: center;
+    font-size: $GIANT_FONT_SIZE;
   }
 }

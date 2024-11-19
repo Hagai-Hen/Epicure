@@ -75,9 +75,15 @@
   }
 
   .about_title {
-    padding: 0 30% 0 0;
+    padding: 0 20% 0 0;
     h1 {
       font-size: $GIANT_FONT_SIZE;
     }
+  }
+}
+
+@media (min-width: map-get($BREAK_POINTS, LARGE)) {
+  .about_title {
+    padding: 0 45% 0 0;
   }
 }

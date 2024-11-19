@@ -12,10 +12,10 @@ export const SearchBanner = ({description}: TopBannerProps) => {
 
       <section className="search_container">
         <h3 className="search_text">{description}</h3>
-        <section>
+        <section className="input_container">
         <img src={SearchIcon} className="icon"/>
-        </section>
         <input className="search_input" placeholder={TOP_BANNER.PLACE_HOLDER}/>
+        </section>
       </section>
   );
 };

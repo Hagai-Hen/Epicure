@@ -1,12 +1,19 @@
 @import "../../resources/variables.scss";
 
 .about_container {
-  margin: 20px 15px;
+  margin: 0 15px;
+  padding: 40px 0;
 }
 
 .about_logo {
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
-  box-sizing: border-box; // Include padding and border in the element's total width and height
+  box-sizing: border-box;
+}
+
+.about_title {
+  padding: 0;
 }
 
 .mobile {
@@ -14,7 +21,7 @@
   img {
     margin-bottom: 15px;
     margin-right: 30px;
-
+    cursor: pointer;
   }
 }
 
@@ -42,17 +49,22 @@
   .about_container {
     display: flex;
     flex-direction: row-reverse;
+    margin: 0 0 0 150px;
   }
   .about_logo {
     display: flex;
+    margin: 0;
     img {
       padding: 100px 100px;
+      width: 178px;
+      height: 166px;
     }
   }
 
   .mobile {
     margin-bottom: 0;
     img {
+      margin-bottom: 0;
       margin-right: 30px;
     }
   }
@@ -60,5 +72,12 @@
   .about_details {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .about_title {
+    padding: 0 30% 0 0;
+    h1 {
+      font-size: $GIANT_FONT_SIZE;
+    }
   }
 }

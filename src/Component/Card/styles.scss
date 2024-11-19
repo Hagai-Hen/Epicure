@@ -26,6 +26,7 @@
     line-height: 21.47px;
     letter-spacing: 2.67px;
     text-align: left;
+    margin: 5px;
   }
 
   h3 {
@@ -35,13 +36,14 @@
     line-height: 20px;
     letter-spacing: 1.97px;
     text-align: left;
+    margin: 5px;
   }
 
   .type_icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 10px 0;
     height: 31px;
     width: 40px;
   }
@@ -70,9 +72,8 @@
   align-items: left;
 }
 .nis-icon {
-  margin-right: 2px;
   height: 10px;
-  margin-top: 25px;
+  margin-top: 14px;
 }
 
 .rating {
@@ -95,6 +96,7 @@
       letter-spacing: 2.67px;
       text-align: center;
       margin: 0;
+      padding: 0 10%;
     }
     h3 {
       font-size: $MEDIUM_FONT_SIZE;

@@ -7,7 +7,7 @@ export const Footer = () => {
     <div className="footer_container">
         <section className="buttons_container">
             {BUTTONS.FOOTER.map((btn, i) => (
-                <Button style='navbar_button' key={i}>{btn.title}</Button>
+                <Button style='side_menu_button' key={i}>{btn.title}</Button>
             ))}
         </section>
     </div>

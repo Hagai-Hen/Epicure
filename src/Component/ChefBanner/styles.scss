@@ -3,7 +3,7 @@
 .chef_banner {
   display: flex;
   flex-direction: column;
-  margin: 75px 10px;
+  margin: 30px 10px;
 
   h4 {
     font-family: $MAIN_FONT_FAMILY;
@@ -52,6 +52,10 @@
   line-height: 47px;
   letter-spacing: 2.67px;
   text-align: center;
+}
+
+.chef_button {
+  margin-top: 20px;
 }
 
 .desc {
@@ -109,7 +113,7 @@
   }
 
   .chef_banner {
-    margin: 0 100px;
+    margin: 50px 100px;
     h4 {
       font-family: $MAIN_FONT_FAMILY;
       font-size: 30px;
@@ -117,11 +121,14 @@
       text-align: left;
     }
   }
+  .chef_button {
+    display: none;
+  }
 }
 
 @media (min-width: map-get($BREAK_POINTS, LARGE)) {
   .chef_banner {
-    margin: 0 200px;
+    margin: 50px 150px;
   }
 
 }

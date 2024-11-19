@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { About } from "../../Component/About/About";
 import { ChefBanner } from "../../Component/ChefBanner/ChefBanner";
 import { Footer } from "../../Component/Footer/Footer";
@@ -7,19 +8,19 @@ import { TopBanner } from "../../Component/TopBanner/TopBanner";
 import { DISHES, POPULAR_REST } from "../../resources/content";
 
 function HomePage() {
-
-
   return (
     <>
-      <TopBanner/>
-      <Slider title={POPULAR_REST.TITLE} cards={POPULAR_REST.DATA} />
-      <Slider title={DISHES.TITLE} cards={DISHES.DATA} />
-      <KeyBanner />
-      <ChefBanner />
-      <About />
-      <Footer />
+      <Fade delay={150}>
+        <TopBanner />
+        <Slider title={POPULAR_REST.TITLE} cards={POPULAR_REST.DATA} />
+        <Slider title={DISHES.TITLE} cards={DISHES.DATA} button={false}/>
+        <KeyBanner />
+        <ChefBanner />
+        <About />
+        <Footer />
+      </Fade>
     </>
-  )
+  );
 }
 
 export default HomePage;

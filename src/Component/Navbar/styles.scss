@@ -28,15 +28,18 @@
   box-sizing: border-box;
   justify-content: space-between;
   padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .left_container {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   .symbol {
-    margin: auto;
-    cursor: pointer;
-
     transition: transform 0.5s;
 
     &:hover {
@@ -55,6 +58,7 @@
   letter-spacing: $TITLE_LETTER_SPACE;
   font-weight: 200;
   display: none;
+  cursor: pointer;
 }
 
 .navbar .symbol_container {
@@ -98,5 +102,6 @@
     .hambur_symbol {
       display: none;
     }
+    justify-content: flex-start;
   }
 }

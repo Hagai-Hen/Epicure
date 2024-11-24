@@ -117,7 +117,7 @@
   }
 
   .chef_banner {
-    margin: 50px 100px;
+    margin: 50px 10px;
     h4 {
       font-family: $MAIN_FONT_FAMILY;
       font-size: 30px;
@@ -130,7 +130,7 @@
   }
 
   .chef_img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     img {
       width: 478px;
@@ -143,5 +143,6 @@
 @media (min-width: map-get($BREAK_POINTS, LARGE)) {
   .chef_banner {
     margin: 50px 150px;
+    display: flex;
   }
 }

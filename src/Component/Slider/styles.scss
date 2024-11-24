@@ -1,12 +1,12 @@
 @import "../../resources/variables.scss";
 
 .container {
-  margin: 30px 15px;
+  margin: 30px 1px 30px 15px;
   display: flex;
   flex-direction: column;
 }
 .title {
-  padding: 10px 0 20px 0;
+  padding: 10px 0;
   h1 {
     font-family: $MAIN_FONT_FAMILY;
     font-size: $SMALL_FONT_SIZE;
@@ -21,7 +21,6 @@
 .cards_container {
   display: none;
   justify-content: center;
-  margin: 0 100px;
   gap: 20px;
 }
 
@@ -37,12 +36,11 @@
 
 .button {
   margin-top: 30px;
-  margin-right: 8%;
 }
 
 @media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
   .container {
-    margin: 100px 30px;
+    margin: 100px 50px;
   }
   .title {
     h1 {
@@ -62,6 +60,11 @@
   .button {
     display: flex;
     justify-content: flex-end;
+    // margin-right: 9%;
+  }
+
+  ._cards {
+    flex-direction: column;
   }
 
   .mobile-only {
@@ -71,5 +74,11 @@
   .title {
     text-align: center;
     font-size: $GIANT_FONT_SIZE;
+  }
+}
+
+@media (min-width: map-get($BREAK_POINTS, LARGE)) {
+  .button {
+    margin-right: 8%;
   }
 }

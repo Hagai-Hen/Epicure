@@ -53,14 +53,15 @@ export const Slider = ({ title, cards, button = true }: SliderProps) => {
           </section>
         ))}
       </section>
+
       <section className="swiper_container">
         <SwiperComponent cards={cards} />
       </section>
-        <section className={`button ${button ? "" : "mobile-only"}`}>
-          <Button style="navbar_button" arrow={true}>
-            {POPULAR_REST.ALL}
-          </Button>
-        </section>
+      <section className={`button ${button ? "" : "mobile-only"}`}>
+        <Button style="navbar_button" arrow={true}>
+          {POPULAR_REST.ALL}
+        </Button>
+      </section>
     </div>
   );
 };

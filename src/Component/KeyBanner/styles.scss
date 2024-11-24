@@ -50,7 +50,7 @@
 }
 
 @media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
-  .title {
+  .key_title {
     h1 {
       font-size: $GIANT_FONT_SIZE;
       letter-spacing: 2.14px;
@@ -67,7 +67,6 @@
     flex-direction: row;
     overflow-x: auto;
     white-space: nowrap;
-    padding: 10px;
-    padding-left: 20px;
+    gap: 100px;
   }
 }

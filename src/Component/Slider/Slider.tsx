@@ -35,7 +35,7 @@ export const Slider = ({ title, cards, button = true }: SliderProps) => {
                   </div>
                   {card.price && (
                     <div className="price_container">
-                      <span className="line"></span>
+                      <span className="line" />
                       <span className="price">
                         <img
                           src={nisIcon}
@@ -44,7 +44,7 @@ export const Slider = ({ title, cards, button = true }: SliderProps) => {
                         />
                         {card.price}
                       </span>
-                      <span className="line"></span>
+                      <span className="line" />
                     </div>
                   )}
                 </section>
@@ -53,14 +53,15 @@ export const Slider = ({ title, cards, button = true }: SliderProps) => {
           </section>
         ))}
       </section>
+
       <section className="swiper_container">
         <SwiperComponent cards={cards} />
       </section>
-        <section className={`button ${button ? "" : "mobile-only"}`}>
-          <Button style="navbar_button" arrow={true}>
-            {POPULAR_REST.ALL}
-          </Button>
-        </section>
+      <section className={`button ${button ? "" : "mobile-only"}`}>
+        <Button style="navbar_button" arrow={true}>
+          {POPULAR_REST.ALL}
+        </Button>
+      </section>
     </div>
   );
 };

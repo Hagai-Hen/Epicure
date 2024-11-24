@@ -75,14 +75,18 @@
 }
 
 @media (min-width: map-get($BREAK_POINTS, MEDIUM)) {
-  .title {
+  .chef_title {
     font-size: $GIANT_FONT_SIZE;
     text-align: center;
+    height: 78px;
   }
 
   .main_container {
     display: flex;
     gap: 40px;
+    h5 {
+      margin-top: 20px;
+    }
   }
 
   .desc {
@@ -113,7 +117,7 @@
   }
 
   .chef_banner {
-    margin: 50px 100px;
+    margin: 50px 10px;
     h4 {
       font-family: $MAIN_FONT_FAMILY;
       font-size: 30px;
@@ -124,11 +128,21 @@
   .chef_button {
     display: none;
   }
+
+  .chef_img {
+    max-width: 100%;
+    height: 100%;
+    img {
+      width: 478px;
+      height: 372px;
+      object-fit: cover;
+    }
+  }
 }
 
 @media (min-width: map-get($BREAK_POINTS, LARGE)) {
   .chef_banner {
     margin: 50px 150px;
+    display: flex;
   }
-
 }

@@ -21,15 +21,18 @@ export const Slider = ({ title, cards, button = true }: SliderProps) => {
       </section>
 
       <section className="cards_container">
-        {cards.map((card, i) => (
+        {cards.slice(0, 3).map((card, i) => (
           <section className="card" key={i}>
             <Card>
-              <img src={card.pic} className="pic" />
+              <img src={card.img} className="pic" />
               <section className="text_container">
-                <h1>{card.title}</h1>
-                {card.type && <img src={card.type} className="type_icon" />}
+                <h1>{card.name}</h1>
+                <section className="tags_container">
+                {card.tags && card.tags.map((tag, i) => <img key={i} src={`src/assets/icons/${tag}.svg`} className="type_icon" />)}
+                </section>
                 <section className="desc_container">
-                  <h3>{card.desc}</h3>
+                  <h3>{card.ingredients}</h3>
+                  <h3>{card.chef_name}</h3>
                   <div className="rating">
                     {card.rate && getStars(card.rate)}
                   </div>

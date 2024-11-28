@@ -17,6 +17,10 @@
     margin: 0;
   }
 }
+.tags_container {
+  display: flex;
+  gap: 10px;
+}
 
 .cards_container {
   display: none;

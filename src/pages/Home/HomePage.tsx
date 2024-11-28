@@ -8,14 +8,11 @@ import { TopBanner } from "../../Component/TopBanner/TopBanner";
 import { CHEF_OF_THE_WEEK, DISHES, POPULAR_REST } from "../../resources/content";
 import useGetRestaurants from "../../hooks/useGetRestaurants";
 import useGetDishes from "../../hooks/useGetDishes";
-import useGetChefs from "../../hooks/useGetChefs";
 
 function HomePage() {
-  const { restaurants, setRestaurants } = useGetRestaurants();
-  const { dishes, setDishes} = useGetDishes();
-  // console.log("rest", restaurants);
-  // console.log("dishes", dishes);
-  // console.log("chefs", chefs);
+  const { restaurants } = useGetRestaurants();
+  const { dishes } = useGetDishes();
+
   return (
     <>
       <Fade delay={150}>

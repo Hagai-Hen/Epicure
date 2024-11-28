@@ -19,7 +19,7 @@ export const ChefBanner = ({ chef_id }: ChefBannerProps) => {
       <h1 className="title">{CHEF_OF_THE_WEEK.TITLE}</h1>
       <main className="main_container">
         <section className="chef_img">
-          <img src={CHEF_OF_THE_WEEK.IMG} />
+          <img src={chef?.img} />
           <h3 className="chef_title">{chef?.name}</h3>
         </section>
         <h5 className="desc">{chef?.description}</h5>
@@ -29,7 +29,7 @@ export const ChefBanner = ({ chef_id }: ChefBannerProps) => {
         {restaurant.map((card, i) => (
           <section className="rest_card" key={i}>
             <Card>
-              <img src={card.pic} className="rest_pic" />
+              <img src={card.img} className="rest_pic" />
               <h3>{card.name}</h3>
             </Card>
           </section>

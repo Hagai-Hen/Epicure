@@ -5,7 +5,7 @@ import { Footer } from "../../Component/Footer/Footer";
 import { KeyBanner } from "../../Component/KeyBanner/KeyBanner";
 import { Slider } from "../../Component/Slider/Slider";
 import { TopBanner } from "../../Component/TopBanner/TopBanner";
-import { DISHES, POPULAR_REST } from "../../resources/content";
+import { CHEF_OF_THE_WEEK, DISHES, POPULAR_REST } from "../../resources/content";
 import useGetRestaurants from "../../hooks/useGetRestaurants";
 import useGetDishes from "../../hooks/useGetDishes";
 import useGetChefs from "../../hooks/useGetChefs";
@@ -13,10 +13,9 @@ import useGetChefs from "../../hooks/useGetChefs";
 function HomePage() {
   const { restaurants, setRestaurants } = useGetRestaurants();
   const { dishes, setDishes} = useGetDishes();
-  const { chefs, setChefs} = useGetChefs();
-  console.log("rest", restaurants);
-  console.log("dishes", dishes);
-  console.log("chefs", chefs);
+  // console.log("rest", restaurants);
+  // console.log("dishes", dishes);
+  // console.log("chefs", chefs);
   return (
     <>
       <Fade delay={150}>
@@ -24,7 +23,7 @@ function HomePage() {
         <Slider title={POPULAR_REST.TITLE} cards={restaurants} />
         <Slider title={DISHES.TITLE} cards={dishes} button={false}/>
         <KeyBanner />
-        <ChefBanner />
+        <ChefBanner chef_id={CHEF_OF_THE_WEEK.CHEF_ID} />
         <About />
         <Footer />
       </Fade>

@@ -16,11 +16,12 @@ export const SwiperComponent = ({ cards }: SwiperProps) => {
       {cards.map((card, i) => (
         <SwiperSlide key={i}>
           <Card>
-            <img src={card.pic} className="pic" />
+            <img src={card.img} className="pic" />
             <section className="text_container">
-              <h1>{card.title}</h1>
+              <h1>{card.name}</h1>
               <section className="desc_container">
-                <h3>{card.desc}</h3>
+                <h3>{card.chef_name}</h3>
+                <h3>{card.ingredients}</h3>
                 <div className="rating">{card.rate && getStars(card.rate)}</div>
               {card.type && <img src={card.type} className="type_icon" />}
                 {card.price && (

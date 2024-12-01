@@ -10,10 +10,11 @@ import { getStars } from "../../resources/utils";
 interface SliderProps {
   title: string;
   cards: CardInterface[];
+  className?: string;
   button?: boolean;
 }
 
-export const Slider = ({ title, cards, button = true }: SliderProps) => {
+export const Slider = ({ title, cards, className="", button = true }: SliderProps) => {
   return (
     <div className="container">
       <section className="title">
@@ -25,7 +26,7 @@ export const Slider = ({ title, cards, button = true }: SliderProps) => {
           <section className="card" key={i}>
             <Card>
               <img src={card.img} className="pic" />
-              <section className="text_container">
+              <section className={`text_container`}>
                 <h1>{card.name}</h1>
                 <section className="tags_container">
                 {card.tags && card.tags.map((tag, i) => <img key={i} src={`src/assets/icons/${tag}.svg`} className="type_icon" />)}
@@ -58,7 +59,7 @@ export const Slider = ({ title, cards, button = true }: SliderProps) => {
       </section>
 
       <section className="swiper_container">
-        <SwiperComponent cards={cards} />
+        <SwiperComponent cards={cards} className={`${className}`}/>
       </section>
       <section className={`button ${button ? "" : "mobile-only"}`}>
         <Button style="navbar_button" arrow={true}>

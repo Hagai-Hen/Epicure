@@ -17,7 +17,7 @@ function HomePage() {
     <>
       <Fade delay={150}>
         <TopBanner />
-        <Slider title={POPULAR_REST.TITLE} cards={restaurants} />
+        <Slider title={POPULAR_REST.TITLE} cards={restaurants} className="restaurants"/>
         <Slider title={DISHES.TITLE} cards={dishes} button={false}/>
         <KeyBanner />
         <ChefBanner chef_id={CHEF_OF_THE_WEEK.CHEF_ID} />

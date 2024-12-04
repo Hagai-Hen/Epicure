@@ -36,7 +36,7 @@ export const ChefBanner = ({ chef_id }: ChefBannerProps) => {
         ))}
       </div>
       <section className="swiper_container">
-        <SwiperComponent cards={restaurant} />
+        <SwiperComponent cards={restaurant} className="chef_of_the_week"/>
       </section>
       <section className="chef_button">
         <Button style="navbar_button" arrow={true}>

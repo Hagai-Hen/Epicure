@@ -8,19 +8,21 @@ import { getStars } from "../../resources/utils";
 
 interface SwiperProps {
   cards: CardInterface[];
+  className?: string;
 }
 
-export const SwiperComponent = ({ cards }: SwiperProps) => {
+export const SwiperComponent = ({ cards, className = "" }: SwiperProps) => {
   return (
     <Swiper spaceBetween={20} slidesPerView={1.5}>
       {cards.map((card, i) => (
         <SwiperSlide key={i}>
-          <Card>
-            <img src={card.pic} className="pic" />
-            <section className="text_container">
-              <h1>{card.title}</h1>
+          <Card className={`${className}`}>
+            <img src={card.img} className="pic" />
+            <section className={`text_container`}>
+              <h1>{card.name}</h1>
               <section className="desc_container">
-                <h3>{card.desc}</h3>
+                <h3>{card.chef_name}</h3>
+                <h3>{card.ingredients}</h3>
                 <div className="rating">{card.rate && getStars(card.rate)}</div>
               {card.type && <img src={card.type} className="type_icon" />}
                 {card.price && (

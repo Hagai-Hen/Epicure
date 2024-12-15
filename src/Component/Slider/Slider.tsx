@@ -10,10 +10,11 @@ import { getStars } from "../../resources/utils";
 interface SliderProps {
   title: string;
   cards: CardInterface[];
+  className?: string;
   button?: boolean;
 }
 
-export const Slider = ({ title, cards, button = true }: SliderProps) => {
+export const Slider = ({ title, cards, className="", button = true }: SliderProps) => {
   return (
     <div className="container">
       <section className="title">
@@ -21,15 +22,18 @@ export const Slider = ({ title, cards, button = true }: SliderProps) => {
       </section>
 
       <section className="cards_container">
-        {cards.map((card, i) => (
+        {cards.slice(0, 3).map((card, i) => (
           <section className="card" key={i}>
             <Card>
-              <img src={card.pic} className="pic" />
-              <section className="text_container">
-                <h1>{card.title}</h1>
-                {card.type && <img src={card.type} className="type_icon" />}
+              <img src={card.img} className="pic" />
+              <section className={`text_container`}>
+                <h1>{card.name}</h1>
+                <section className="tags_container">
+                {card.tags && card.tags.map((tag, i) => <img key={i} src={`src/assets/icons/${tag}.svg`} className="type_icon" />)}
+                </section>
                 <section className="desc_container">
-                  <h3>{card.desc}</h3>
+                  <h3>{card.ingredients}</h3>
+                  <h3>{card.chef_name}</h3>
                   <div className="rating">
                     {card.rate && getStars(card.rate)}
                   </div>
@@ -55,7 +59,7 @@ export const Slider = ({ title, cards, button = true }: SliderProps) => {
       </section>
 
       <section className="swiper_container">
-        <SwiperComponent cards={cards} />
+        <SwiperComponent cards={cards} className={`${className}`}/>
       </section>
       <section className={`button ${button ? "" : "mobile-only"}`}>
         <Button style="navbar_button" arrow={true}>

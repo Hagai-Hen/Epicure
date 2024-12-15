@@ -1,7 +1,7 @@
 import CardPic from "../assets/pictures/card_pic.svg";
 import SpicyIcon from "../assets/icons/spicy.svg";
 import VeganIcon from "../assets/icons/vegan.svg";
-import VegitarianIcon from "../assets/icons/vegitarian.svg";
+import VegitarianIcon from "../assets/icons/vegetarian.svg";
 import ChefPic from '../assets/pictures/chef.svg';
 import AboutLogo from '../assets/icons/about_logo.svg';
 import AppStoreIcon from '../assets/icons/app_store.svg';
@@ -98,11 +98,12 @@ export const KEY_BANNER = {
 }
 
 export const CHEF_OF_THE_WEEK = {
+  CHEF_ID: '6746c81fea269913f38a9ab0',
   TITLE: 'CHEF OF THE WEEK:',
   CHEF_TITLE: 'Yossi Shitrit',
   DESC: `Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.`,
   IMG: ChefPic,
-  CHEF_REST: `Yossi's Restaurants`,
+  CHEF_REST: `'s Restaurants`,
   REST: [{pic: OnzaPic, title: 'Onza'}, {pic: KitchenMarketPic, title: 'Kitchen Market'}, {pic: MashyaPic, title: 'Mashya'}]
 }
 
